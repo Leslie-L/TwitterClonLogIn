@@ -11,6 +11,7 @@
 }
 body{
     background-color: var(--black);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main{
     width: 100%;
