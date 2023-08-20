@@ -13,34 +13,129 @@ body{
     background-color: var(--black);
 }
 main{
-    display: flex;
-    flex-flow: column-reverse wrap;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 .result-container{
     width: 100%;
-    height: 300px;
+    height: 100vh;
     background-image: url("./Images/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.result-container img{
+    width: 400px;
+    height: 300px;
+    
+}
+/*
+Pricipales componentes
+*/
 .search-container{
     width: 100%;
     height: 100vh;
     color: var(--white);
 }
-.search-container span{
-    width: 100px;
-    height: 100px;
-    color: var(--white);
-    background: url(./Images/twitter-brands.svg);
+.search-container_logo{
+    margin: 20px 10%;
+    width: 60px;
+    height: 80px;
+    background: url("./Images/twitterLogo.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     background-position: center;   
     display: inline-block;
 } 
+.search-container_title{
+  margin-left: 10%; 
+  margin-bottom: 40px; 
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.search-container_subtitle{
+    margin-left: 10%; 
+    margin-bottom: 15px; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+.search-container_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10%;
+}
+.button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+} 
+.social{
+    background-color: var(--white);
+}
+.account{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.signin{
+    border: 0.8px solid var(--white);
+    background-color: var(--black);
+    color:var(--blue);
+    
+}
+.google{
+    color: var(--gray);
+}
+.iconButtons{
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 5px;
+}
+.division{
+    display: flex;
+    height: 15px;
+    width: 300px;
+    text-justify: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+.division-line{
+    width: 140px;
+    border-top: 1px solid var(--gray);
+}
+.search-container-paragraph{
+    width: 300px;
+   font-size: 0.8rem; 
+   font-weight: 300;
+}
+.a-link{
+    color: var(--blue);
+    text-decoration: none;
+}
+.search-container-alredy{
+    margin-top: 50px;
+}
+.search-container_subtitle2{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+/*
+Footer
+*/
 footer{
     margin-top: 5px;
     width: 100%;
@@ -61,4 +156,16 @@ footer ul li{
 a{
     color: var(--gray);
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    main{
+       display: flex;
+    }
+
 }
